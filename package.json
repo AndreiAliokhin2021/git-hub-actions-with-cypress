@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "cypress": "^12.7.0"
+  },
+  "scripts": {
+    "build": "npm install",
+    "cypress:run": "cypress run"
+  },
+  "name": "git-hub-actions-with-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
