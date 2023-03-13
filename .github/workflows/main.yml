@@ -2,6 +2,7 @@ name: Cypress tests
 on: push
 jobs:
   cypress-run:
+    environment: test
     name: Cypress run
     runs-on: ubuntu-22.04
     steps:
