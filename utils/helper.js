@@ -16,5 +16,51 @@ export const difference = (set1, set2) => {
     return set1
 }
 
+export const logPlanet = (planets) => {
+    for (let planet of planets) {
+        cy.log('------------------')
+        for (let key in planet) {
+            cy.log(key + ": " + planet[key]);
+        }
+    }
+}
+
+export const logPlanetsAsStrings = planets => {
+    planets.forEach(planet => {
+        const array = Object.keys(planet).map(key => key + ':' + planet[key])
+        console.log(array.join(','));
+    })
+}
+
+export const deletePlanetByName = (planets, name) =>
+    planets.splice(planets.indexOf(planets.find(element => element.planet === name)), 1)
+
+export const getPlanetWithDistance = (planets, minValue) => planets.filter(planet => planet.distance > minValue)
+
+export const sortPlanetByRadius = (planets, ascending = true) => {
+    planets.sort((a, b) => {
+        if (ascending) {
+            return a.radius - b.radius
+        } else {
+            return b.radius - a.radius
+        }
+    })
+    return planets
+}
+
+export const sortPlanetByName = (planets) => {
+    planets.sort((a, b) => a.planet.localeCompare(b.planet));
+    return planets
+}
+
+export const rateFormatter = (str) => Number(parseFloat(str).toFixed(2));
+
+
+
+
+
+
+
+
 
 

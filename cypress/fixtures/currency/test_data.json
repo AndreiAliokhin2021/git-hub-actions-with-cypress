@@ -1,0 +1,24 @@
+{
+  "currency": {
+    "base": "USD",
+    "date": "2023-04-03",
+    "rates": [
+      {
+        "shortName": "CAD",
+        "rate": 1.34
+      },
+      {
+        "shortName": "CHF",
+        "rate": 0.91
+      },
+      {
+        "shortName": "EUR",
+        "rate": 0.91
+      },
+      {
+        "shortName": "GBP",
+        "rate": 0.80
+      }
+    ]
+  }
+}
