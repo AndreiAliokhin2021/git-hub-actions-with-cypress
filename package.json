@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "chance": "1.1.11",
     "cypress": "^12.7.0"
   },
   "scripts": {
