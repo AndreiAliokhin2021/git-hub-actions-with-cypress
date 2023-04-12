@@ -3,7 +3,7 @@ const Chance = require('chance');
 const {isSuperSet, union, intersection, difference} = require("../../../utils/helper");
 
 // tasks 1-5
-describe('course task', () => {
+describe('Collections working with sets tasks', () => {
     it('tasks 1-5', () => {
         let currencySet = new Set(['USD', 'EUR', 'BYN'])
         currencySet.add('USD').add('GBP').add('AUD')
